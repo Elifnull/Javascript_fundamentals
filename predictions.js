@@ -59,6 +59,6 @@ const [ ,willThisWork] = secondKey; // no this will not work...I was wrong!
 console.log(key);
 console.log(secondKey);
 console.log(secondKey[0]);
-console.log(willThisWork);
+console.log(willThisWork); //this actually worked, I need to be more attentive
 
 //Prediction 5: 'value', [1,5,1,8,3,3], 1, undefined
