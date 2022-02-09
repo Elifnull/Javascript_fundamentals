@@ -6,7 +6,7 @@ const [ ,otherRandomCar ] = cars
 console.log(randomCar)
 console.log(otherRandomCar)
 
-///prediction1: 
+///prediction1:  "Tesla" "Mercedes"
 
 //Problem 2:
 const employee = {
