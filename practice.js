@@ -44,3 +44,19 @@ isEven = number => number % 2 === 0 ;
 arrayTest = [2,2,4,8,6].every(isEven)
 
 console.log(arrayTest)
+
+const arr = object.freeze([1,2,3,4]);
+arr.push(300);  //object is not extensible
+
+const groceryList = [
+    { "item": "carrots",           "haveIngredient": false },
+    { "item": "onions",            "haveIngredient": true  },
+    { "item": "celery",            "haveIngredient": false },
+    { "item": "cremini mushrooms", "haveIngredient": false },
+    { "item": "butter",            "haveIngredient": true  }
+];
+
+nuarr =[...groceryList, {"item": "pepper", "haveIngredient": true}]
+const needThyme = groceryList.join( '[ { "item": "thyme", "haveIngredient": false } ]');
+
+console.log(needThyme, groceryList)
