@@ -26,41 +26,39 @@ const pokémon = Object.freeze([
 
 
 // divisiable by 3
-// const div3Pkmn = pokémon.filter( p => p.id % 3 === 0 );
-// console.log(div3Pkmn)
+const div3Pkmn = pokémon.filter( p => p.id % 3 === 0 );
+console.log(div3Pkmn)
 
 // // types are fire
-// const stringComp = (string) => string === "fire" ;
-// const firePkmn = pokémon.filter( p => p.types[0] == "fire" );
-// console.log(firePkmn);
+const stringComp = (string) => string === "fire" ;
+const firePkmn = pokémon.filter( p => p.types[0] == "fire" );
+console.log(firePkmn);
 
 // more than two thypes
 
-// const twoTypePKM = pokémon.filter(p => p.types.length > 1);
-// console.log(twoTypePKM);
+const twoTypePKM = pokémon.filter(p => p.types.length > 1);
+console.log(twoTypePKM);
 
 //just the name
 
-// const namePKMN = pokémon.map(p => p.name);
-
-// console.log(namePKMN);
+const namePKMN = pokémon.map(p => p.name);
+console.log(namePKMN);
 
 //names of pokemon with id > 99
 
-// const pkmn99 = pokémon.filter(p => p.id > 99).map(p => p.name);
-
-// console.log(pkmn99);
+const pkmn99 = pokémon.filter(p => p.id > 99).map(p => p.name);
+console.log(pkmn99);
 
 //poison only type//
 
-// const poisonPKMN = pokémon.filter(p => p.types == "poison");
-// console.log(poisonPKMN);
+const poisonPKMN = pokémon.filter(p => p.types == "poison");
+console.log(poisonPKMN);
 
 //an array containing just the first type of all the pokémon whose second type is "flying"
 
-// const flying2ndPKMN = pokémon.filter(p => p.types[1] == "flying");
+const flying2ndPKMN = pokémon.filter(p => p.types[1] == "flying");
 
-// console.log(flying2ndPKMN.map( p => p.types[0]));
+console.log(flying2ndPKMN.map( p => p.types[0]));
 
 //countof pokemon who are normal type
 
