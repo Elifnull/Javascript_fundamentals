@@ -29,11 +29,19 @@ console.log(array.forEach(isEven));
 
 
 //Object.freeze()
-array = [21,11,22,12]
-const tuple = Object.freeze(array) //Object.freeze() creates an imutable object!!
+array = [21,11,22,12,-2, -3, 10, 00, -1, 2, 9, 6];
+const tuple = Object.freeze(array); //Object.freeze() creates an imutable object!!
 
 console.log(tuple);
 
 const spreadArray = [...array, 00, 01, 02, 04]; // spread operator creates a shallow copy, that can be used to create new array object
 
 console.log(spreadArray);
+
+
+/// Sorting with .sort()
+
+console.log(spreadArray.sort()); // sort is not as good, it converts each index value into a string,
+
+/// work around for sort of numbers
+console.log(spreadArray.sort(function(a,b){return a-b})); //this does a comparative analysis of the values and sorts them based off of the difference between values
