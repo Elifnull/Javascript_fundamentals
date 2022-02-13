@@ -50,3 +50,20 @@ const pokémon = Object.freeze([
 // const pkmn99 = pokémon.filter(p => p.id > 99).map(p => p.name);
 
 // console.log(pkmn99);
+
+//poison only type//
+
+// const poisonPKMN = pokémon.filter(p => p.types == "poison");
+// console.log(poisonPKMN);
+
+//an array containing just the first type of all the pokémon whose second type is "flying"
+
+// const flying2ndPKMN = pokémon.filter(p => p.types[1] == "flying");
+
+// console.log(flying2ndPKMN.map( p => p.types[0]));
+
+//countof pokemon who are normal type
+
+const normalCount = pokémon.filter(p => p.types[0] == "normal");
+
+console.log(normalCount.length);
