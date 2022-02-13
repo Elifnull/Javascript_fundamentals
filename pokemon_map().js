@@ -23,4 +23,30 @@ const pokémon = Object.freeze([
         { "id": 146, "name": "Moltres",    "types": ["fire", "flying"] },
         { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
     ]);
-    
+
+
+// divisiable by 3
+// const div3Pkmn = pokémon.filter( p => p.id % 3 === 0 );
+// console.log(div3Pkmn)
+
+// // types are fire
+// const stringComp = (string) => string === "fire" ;
+// const firePkmn = pokémon.filter( p => p.types[0] == "fire" );
+// console.log(firePkmn);
+
+// more than two thypes
+
+// const twoTypePKM = pokémon.filter(p => p.types.length > 1);
+// console.log(twoTypePKM);
+
+//just the name
+
+// const namePKMN = pokémon.map(p => p.name);
+
+// console.log(namePKMN);
+
+//names of pokemon with id > 99
+
+// const pkmn99 = pokémon.filter(p => p.id > 99).map(p => p.name);
+
+// console.log(pkmn99);
