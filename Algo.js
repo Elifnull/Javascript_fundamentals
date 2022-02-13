@@ -25,7 +25,15 @@ array = [1,2,3,4,5,6,7,8]
 console.log(array.forEach(isEven));
 //Join objects .concat("object to be joinded")
 
-//Bubble sort
 
-let array = [1,8,4,11,56,0,5]
 
+
+//Object.freeze()
+array = [21,11,22,12]
+const tuple = Object.freeze(array) //Object.freeze() creates an imutable object!!
+
+console.log(tuple);
+
+const spreadArray = [...array, 00, 01, 02, 04]; // spread operator creates a shallow copy, that can be used to create new array object
+
+console.log(spreadArray);
