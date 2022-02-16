@@ -7,6 +7,7 @@ function App() {
       <main>
         <h1>Hello Dojo!</h1>
         <h2>Things I need to do:</h2>
+        <section className='todo_list'>
         <ul>
           <li>Lear React</li>
           <li>Clime mt. Kilimengaro</li>
@@ -14,6 +15,7 @@ function App() {
           <li>maybe do Some Next.js</li>
           <li>Run a marathon</li>
         </ul>
+        </section>
       </main>
     </div>
   );
