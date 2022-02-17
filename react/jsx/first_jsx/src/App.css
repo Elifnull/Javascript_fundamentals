@@ -1,4 +1,5 @@
 .todo_list {
     background-color: darkcyan;
-    font-weight: 300;
+    font-weight: 200;
+    font-stretch: condensed;
 }
